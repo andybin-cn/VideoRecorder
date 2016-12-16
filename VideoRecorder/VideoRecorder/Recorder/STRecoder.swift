@@ -16,7 +16,7 @@ import AVFoundation
 //    case off
 //}
 
-class YGRecoder: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
+class STRecoder: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     var audioDevice: AVCaptureDevice?
     var videoDevice: AVCaptureDevice?
     var audioDeviceInput: AVCaptureDeviceInput?
@@ -50,7 +50,7 @@ class YGRecoder: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptu
         didSet {
             if videoDevicePosition != oldValue {
                 captureSession.beginConfiguration()
-                if let videoDevice = YGRecoder.videoDeviceForPosition(position: videoDevicePosition), let videoInput = try? AVCaptureDeviceInput(device: videoDevice) {
+                if let videoDevice = STRecoder.videoDeviceForPosition(position: videoDevicePosition), let videoInput = try? AVCaptureDeviceInput(device: videoDevice) {
                     captureSession.removeInput(videoDeviceInput)
                     self.videoDevice = videoDevice
                     self.videoDeviceInput = videoInput
@@ -76,7 +76,7 @@ class YGRecoder: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptu
             }
         }
         
-        if let videoDevice = YGRecoder.videoDeviceForPosition(position: videoDevicePosition), let videoInput = try? AVCaptureDeviceInput(device: videoDevice){
+        if let videoDevice = STRecoder.videoDeviceForPosition(position: videoDevicePosition), let videoInput = try? AVCaptureDeviceInput(device: videoDevice){
             self.videoDevice = videoDevice
             self.videoDeviceInput = videoInput
             if captureSession.canAddInput(videoInput) {

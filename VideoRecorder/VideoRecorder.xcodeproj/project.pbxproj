@@ -14,7 +14,7 @@
 		B31EE0951E03DF0E00ED08FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31EE0931E03DF0E00ED08FB /* LaunchScreen.storyboard */; };
 		B31EE0A01E03DF0E00ED08FB /* VideoRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EE09F1E03DF0E00ED08FB /* VideoRecorderTests.swift */; };
 		B31EE0AB1E03DF0E00ED08FB /* VideoRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EE0AA1E03DF0E00ED08FB /* VideoRecorderUITests.swift */; };
-		B31EE0BE1E03DF5500ED08FB /* YGRecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EE0BA1E03DF5500ED08FB /* YGRecoder.swift */; };
+		B31EE0BE1E03DF5500ED08FB /* STRecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EE0BA1E03DF5500ED08FB /* STRecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		B31EE0A61E03DF0E00ED08FB /* VideoRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31EE0AA1E03DF0E00ED08FB /* VideoRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderUITests.swift; sourceTree = "<group>"; };
 		B31EE0AC1E03DF0E00ED08FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B31EE0BA1E03DF5500ED08FB /* YGRecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGRecoder.swift; sourceTree = "<group>"; };
+		B31EE0BA1E03DF5500ED08FB /* STRecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		B31EE0B91E03DF5500ED08FB /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
-				B31EE0BA1E03DF5500ED08FB /* YGRecoder.swift */,
+				B31EE0BA1E03DF5500ED08FB /* STRecoder.swift */,
 			);
 			path = Recorder;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31EE08D1E03DF0E00ED08FB /* ViewController.swift in Sources */,
-				B31EE0BE1E03DF5500ED08FB /* YGRecoder.swift in Sources */,
+				B31EE0BE1E03DF5500ED08FB /* STRecoder.swift in Sources */,
 				B31EE08B1E03DF0E00ED08FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
